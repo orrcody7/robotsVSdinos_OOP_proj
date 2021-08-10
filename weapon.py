@@ -4,11 +4,11 @@ class Weapon:
     # ~~~~~ CONSTRUCTOR ~~~~~
     def __init__(self, name, attack_power):
         self.weap_type = "laser gun"
-        self.attack_pwr = 25
+        self.attack_power = 25
 
     # ~~~~~ METHODS ~~~~~
 
-    def weapon_specs(self, name):
+    def weapon_detail(self):
         pass
 
     def weap_atk_pwr(self):
