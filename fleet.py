@@ -1,4 +1,4 @@
-## TODO: Make a class for robots
+## TODO: Make a class for fleet
 
 # ** Import:
 from robot import Robot
@@ -8,13 +8,15 @@ from robot import Robot
 class Fleet:
     #~~~~~ CONSTRUCTOR ~~~~~~
     def __init__(self):
-        self.robot_fleet = Robot
-        self.fleet = ''
+        self.robots = []
+
 
     #~~~~~ METHODS ~~~~~
-    def robot_types(self):
-        self.robo_one = Robot("Z5000")
-        self.robo_two = Robot("X4000")
-
-    def robot_fleet(self):
-        self.fleet
+    def create_fleet(self):
+        robot_one = Robot("WALL-E")
+        robot_two = Robot("EVA")
+        robot_three = Robot("Bender")
+        self.robots.append(robot_one)
+        self.robots.append(robot_two)
+        self.robots.append(robot_three)
+        
